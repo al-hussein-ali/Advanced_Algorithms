@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Algorithms_Level_4")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f620049c4ffe5c2ff350a8d74db5dca062348842")]
 [assembly: System.Reflection.AssemblyProductAttribute("Algorithms_Level_4")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Algorithms_Level_4")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
