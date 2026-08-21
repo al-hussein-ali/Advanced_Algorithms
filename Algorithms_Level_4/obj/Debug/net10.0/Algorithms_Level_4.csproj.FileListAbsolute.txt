@@ -1,0 +1,14 @@
+/home/hussein/RiderProjects/Algorithms_Level_4/Algorithms_Level_4/bin/Debug/net10.0/Algorithms_Level_4
+/home/hussein/RiderProjects/Algorithms_Level_4/Algorithms_Level_4/bin/Debug/net10.0/Algorithms_Level_4.deps.json
+/home/hussein/RiderProjects/Algorithms_Level_4/Algorithms_Level_4/bin/Debug/net10.0/Algorithms_Level_4.runtimeconfig.json
+/home/hussein/RiderProjects/Algorithms_Level_4/Algorithms_Level_4/bin/Debug/net10.0/Algorithms_Level_4.dll
+/home/hussein/RiderProjects/Algorithms_Level_4/Algorithms_Level_4/bin/Debug/net10.0/Algorithms_Level_4.pdb
+/home/hussein/RiderProjects/Algorithms_Level_4/Algorithms_Level_4/obj/Debug/net10.0/Algorithms_Level_4.GeneratedMSBuildEditorConfig.editorconfig
+/home/hussein/RiderProjects/Algorithms_Level_4/Algorithms_Level_4/obj/Debug/net10.0/Algorithms_Level_4.AssemblyInfoInputs.cache
+/home/hussein/RiderProjects/Algorithms_Level_4/Algorithms_Level_4/obj/Debug/net10.0/Algorithms_Level_4.AssemblyInfo.cs
+/home/hussein/RiderProjects/Algorithms_Level_4/Algorithms_Level_4/obj/Debug/net10.0/Algorithms_Level_4.csproj.CoreCompileInputs.cache
+/home/hussein/RiderProjects/Algorithms_Level_4/Algorithms_Level_4/obj/Debug/net10.0/Algorithms_Level_4.dll
+/home/hussein/RiderProjects/Algorithms_Level_4/Algorithms_Level_4/obj/Debug/net10.0/refint/Algorithms_Level_4.dll
+/home/hussein/RiderProjects/Algorithms_Level_4/Algorithms_Level_4/obj/Debug/net10.0/Algorithms_Level_4.pdb
+/home/hussein/RiderProjects/Algorithms_Level_4/Algorithms_Level_4/obj/Debug/net10.0/Algorithms_Level_4.genruntimeconfig.cache
+/home/hussein/RiderProjects/Algorithms_Level_4/Algorithms_Level_4/obj/Debug/net10.0/ref/Algorithms_Level_4.dll
