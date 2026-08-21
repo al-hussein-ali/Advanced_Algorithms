@@ -11,15 +11,18 @@ public static class LeanerSearch
         int item = 18;
 
         Console.WriteLine($"The Current Items are {string.Join(", " , arr)}");
-        var result = Search(arr,item);
+        var result =  Search(arr, i => i == item);;
+        // var result = Search(arr,item);
         
         if(result == -1)
             Console.WriteLine("No such Item.");
         
         else
-            Console.WriteLine($"The Item was found in position {result}");
-            
+            Console.WriteLine($"The Item was found in position {result + 1}");
 
+
+
+       
     }
 
     private static int Search(int[] arr, int item)
@@ -32,6 +35,18 @@ public static class LeanerSearch
                 return i;
         }
 
+        return -1;
+    }
+
+    private static int Search(int[] arr, Func<int, bool> predicate)
+    {
+        int length = arr.Length;
+        for (int i = 0; i < length; i++)
+        {
+            if(predicate(arr[i]))
+                return i;
+        }
+        
         return -1;
     }
 }

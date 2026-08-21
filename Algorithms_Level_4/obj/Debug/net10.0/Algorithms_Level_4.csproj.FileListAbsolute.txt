@@ -12,3 +12,4 @@
 /home/hussein/RiderProjects/Algorithms_Level_4/Algorithms_Level_4/obj/Debug/net10.0/Algorithms_Level_4.pdb
 /home/hussein/RiderProjects/Algorithms_Level_4/Algorithms_Level_4/obj/Debug/net10.0/Algorithms_Level_4.genruntimeconfig.cache
 /home/hussein/RiderProjects/Algorithms_Level_4/Algorithms_Level_4/obj/Debug/net10.0/ref/Algorithms_Level_4.dll
+/home/hussein/RiderProjects/Algorithms_Level_4/Algorithms_Level_4/obj/Debug/net10.0/Algorithms_Level_4.sourcelink.json

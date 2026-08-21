@@ -2,8 +2,5 @@
 
 using Algorithms_Level_4.SearchAlgorithms;
 
-/*
-Console.WriteLine("Hello, World!");
-*/
 
 LeanerSearch.Run();
