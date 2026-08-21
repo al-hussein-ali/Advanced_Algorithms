@@ -3,4 +3,4 @@
 using Algorithms_Level_4.SearchAlgorithms;
 
 
-LeanerSearch.Run();
+LinearSearch.Run();

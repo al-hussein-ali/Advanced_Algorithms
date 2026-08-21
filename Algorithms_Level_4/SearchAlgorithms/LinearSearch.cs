@@ -1,6 +1,6 @@
 namespace Algorithms_Level_4.SearchAlgorithms;
 
-public static class LeanerSearch
+public static class LinearSearch
 {
 
 
