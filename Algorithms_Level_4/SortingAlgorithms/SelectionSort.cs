@@ -1,6 +1,6 @@
 namespace Algorithms_Level_4.SortingAlgorithms;
 
-public class SelectionSort
+public static class SelectionSort
 {
     public static void Run(bool asc =  true)
     {
