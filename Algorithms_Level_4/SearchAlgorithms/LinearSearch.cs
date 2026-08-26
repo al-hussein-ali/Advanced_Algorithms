@@ -11,8 +11,8 @@ public static class LinearSearch
         int item = 18;
 
         Console.WriteLine($"The Current Items are {string.Join(", " , arr)}");
-        var result =  Search(arr, i => i == item);;
-        // var result = Search(arr,item);
+        // var result =  Search(arr, i => i == item);
+        var result = SearchFromTwoSides(arr,item);
         
         if(result == -1)
             Console.WriteLine("No such Item.");
@@ -47,6 +47,24 @@ public static class LinearSearch
                 return i;
         }
         
+        return -1;
+    }
+
+    private static int SearchFromTwoSides(int[] arr, int item)
+    {
+        int length = arr.Length;
+        int left = 0, right = arr.Length;
+
+        int mid = right / 2;
+
+        for (left = 0; left <= mid; left++)
+        {
+            if (arr[left] == item) return left;
+
+            if (arr[--right] == item)
+                return right;
+        }
+
         return -1;
     }
 }
