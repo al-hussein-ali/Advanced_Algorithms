@@ -1,3 +1,6 @@
+using System.Numerics;
+using Microsoft.Win32.SafeHandles;
+
 namespace Algorithms_Level_4.TraversalAlgorithms;
 
 public class BinaryTree<T>
@@ -118,6 +121,109 @@ public class BinaryTree<T>
 
         PrintTree(root.Left, space);
     }
+
+    public void LevelOrderTraversal()
+    {
+        BFS(Root);
+        Console.WriteLine();
+    }
+
+    private void BFS<T>(BinaryTreeNode<T>? node)
+    {
+        if (node == null)
+        {
+            return;
+        }
+
+
+        Queue<BinaryTreeNode<T>> queue = new();
+        queue.Enqueue(node);
+
+
+        while (queue.Count > 0)
+        {
+            var current = queue.Dequeue();
+            Console.Write(current.Value + " ");
+
+            if (current.Left != null)
+                queue.Enqueue(current.Left);
+
+            if (current.Right != null)
+                queue.Enqueue(current.Right);
+        }
+    }
+
+    public void BinarySearchTree(T value)
+    {
+        var newNode = new BinaryTreeNode<T>(value);
+        if (Root == null)
+        {
+            Root = newNode;
+            return;
+        }
+
+        int comparison = Comparer<T>.Default.Compare(Root.Value, value);
+
+        BinarySearchTree(newNode, comparison > 0 ? Root.Right : Root.Left);
+    }
+
+    private void BinarySearchTree(BinaryTreeNode<T> newNode, BinaryTreeNode<T> InsertionHalfParent)
+    {
+        if (InsertionHalfParent == null)
+        {
+            InsertionHalfParent = newNode;
+            return;
+        }
+
+        var comparison = Comparer<T>.Default.Compare(InsertionHalfParent.Value, newNode.Value);
+        BinarySearchTree(newNode, comparison > 0 ? InsertionHalfParent.Right : InsertionHalfParent.Left);
+    }
+
+    public void BinarySearchTreeWithWhileLoop(T value)
+    {
+
+        var newNode = new BinaryTreeNode<T>(value);
+        if (Root is null)
+        {
+            Root = newNode;
+            return;
+        }
+
+
+        var queue = new Queue<BinaryTreeNode<T>>();
+        queue.Enqueue(Root);
+        while (queue.Count > 0)
+        {
+            var current = queue.Dequeue();
+            int comparison = Comparer<T>.Default.Compare(current.Value, newNode.Value);
+
+            if (comparison > 0)
+            {
+                if (current.Right == null)
+                {
+                    current.Right = newNode;
+                }
+                else
+                {
+                    queue.Enqueue(current.Right);
+                }
+                
+            }
+            else
+            {
+                if (current.Left == null)
+                {
+                    current.Left = newNode;
+                }
+                else
+                {
+                    queue.Enqueue(current.Left);
+                }
+            }
+        }
+
+    }
+
 
     public void PrintTree()
     {
