@@ -1,60 +1,39 @@
-using System.Numerics;
-using Microsoft.Win32.SafeHandles;
-
 namespace Algorithms_Level_4.TraversalAlgorithms;
 
-public class BinaryTree<T> where T : IComparable<T>
+public class BinarySearchTree<T> where T : IComparable<T>
 {
-    public BinaryTreeNode<T>? Root { get; set; }
+    public BinaryTreeNode<T> Root { get; set; }
 
-    public BinaryTree()
+    public BinarySearchTree()
     {
         Root = null;
     }
 
-
     public void Insert(T value)
     {
-        var newNode = new BinaryTreeNode<T>(value);
-        if (Root == null)
-        {
-            Root = newNode;
-            return;
-        }
-
-
-        Queue<BinaryTreeNode<T>> queue = new();
-
-        queue.Enqueue(Root);
-
-        while (queue.Count > 0)
-        {
-            var current = queue.Dequeue();
-
-            if (current.Left == null)
-            {
-                current.Left = newNode;
-                break;
-            }
-            else
-            {
-                queue.Enqueue(current.Left);
-            }
-
-
-            if (current.Right == null)
-            {
-                current.Right = newNode;
-                break;
-            }
-            else
-            {
-                queue.Enqueue(current.Right);
-            }
-        }
+        Root = Insert(Root, value);
     }
 
-    public void PreOrderTraversal()
+    private BinaryTreeNode<T> Insert(BinaryTreeNode<T> node, T value)
+    {
+        if (node == null)
+        {
+            return new BinaryTreeNode<T>(value);
+        }
+        else if (value.CompareTo(node.Value) < 0)
+        {
+            node.Left = Insert(node.Left,value);
+        }
+        else if (value.CompareTo(node.Value) > 0)
+        {
+            node.Right = Insert(node.Right,value);
+        }
+
+        return node;
+    }
+    
+    
+       public void PreOrderTraversal()
     {
         PreOrderTraversal(Root);
     }

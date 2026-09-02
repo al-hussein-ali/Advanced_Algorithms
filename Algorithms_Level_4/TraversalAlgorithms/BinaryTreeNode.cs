@@ -1,6 +1,6 @@
 namespace Algorithms_Level_4.TraversalAlgorithms;
 
-public class BinaryTreeNode<T>
+public class BinaryTreeNode<T> where T : IComparable<T>
 {
     public T Value { get; set; }
     public BinaryTreeNode<T>? Left { get; set; }
